@@ -49,7 +49,7 @@ e passado especificado pelo usuário).
 
 # Exemplo forma 4
 for num in range(10, -1, -1):
-    print(num)
+    print(num)qq
 
 """
 
