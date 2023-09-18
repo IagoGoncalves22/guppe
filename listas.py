@@ -238,12 +238,77 @@ lista.append(42)
 
 print(lista)
 ............................
+# Outros métodos úteis (mas não tão importantes)
+
+# Encontrar o índice de um elemento na lista
+
+numeros = [5, 6, 7, 8, 9, 10]
+
+# Em qual índice da lista está o valor 6 ?
+print(numeros.index(6))
 
 ............................
+# Transformar uma lista em tupla
 
-............................
+lista = [1,2,3,4,5,6]
+print(lista)
+print(type(lista))
 
+tupla = tuple(lista)
+print(tupla)
+print(type(tupla))
 ............................
+# Desempacotamento de listas
+
+lista = [1,2,3]
+
+num1, num2, num3 = lista
+
+print(num1)
+print(num2)
+print(num3)
+
+# OBS: Se tivermos mais elementos para desempacotar do que variáveis,
+# ou mais variáveis que elementos, teremos ValueError
+............................
+# Copiando uma lista para outra (Shallow Copy e Deep Copy)
+
+# Forma 1 - Deep Copy
+
+lista = [1,2,3]
+print(lista)
+
+nova = lista.copy()
+
+print(nova)
+
+nova.append(4)
+
+print(lista)
+print(nova)
+
+# Ao utilizarmos lista.copy() copiamos os dados da lista para uma nova lista
+# mas elas ficaram totalmente independentes, ou seja, modificando uma lista
+# não afeta a outra. Isso em Python é chamado de Deep Copy (cópia profunda)
+
+
+# Forma 2 - Shallow Copy
+
+lista = [1,2,3]
+print(lista)
+
+nova = lista # cópia
+
+print(nova)
+
+nova.append(4)
+
+print(lista)
+print(nova)
+
+# Nesse caso utilizamos a cópia via atribuição e copiamos os dados da lista
+# para a nova lista. Mas após realizar modificação em uma das litas essa modificação
+# se refletiu em ambas as listas. Isso em Python é chamado de Shallow cópy.
 
 ............................
 
@@ -253,8 +318,3 @@ print(lista)
 
 ............................
 """
-
-
-
-
-
