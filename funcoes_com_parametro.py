@@ -72,15 +72,11 @@ print(outra(5, 4, 'Python '))
 # print(soma(4)) # TypeError - Passando argumentos a menos
 ...................
 
-...................
-
-"""
-
 # Nomeando parâmetros
 
 # def nome_completo(string1, string2):
 def nome_completo(nome, sobrenome):
-    return f'Seu nome completo é {nome}'
+    return f'Seu nome completo é {nome} {sobrenome}'
 
 print(nome_completo('Angelina', "Jolie"))
 
@@ -90,3 +86,44 @@ print(nome_completo('Angelina', "Jolie"))
 # Argumentos são dados passados durante a execução de uma função;
 
 # A ordem dos parâmetros importa!
+
+nome = 'Felicity'
+sobrenome = 'Jones'
+
+print(nome_completo(sobrenome,nome))
+
+# Argumentos nomeados (Keyword Arguments)
+
+# Caso utilizemos nomes dos parãmetros nos argumentos par informálos para utilizá-los,
+# podemos utilizar qualquer ordem.
+
+print(nome_completo(nome='Angelina', sobrenome='Jolie'))
+print(nome_completo(nome=nome, sobrenome=sobrenome))
+print(nome_completo(sobrenome='Marques', nome='Marcia'))
+
+...................
+
+...................
+
+...................
+
+...................
+
+...................
+
+"""
+# Erro comum na utilização de return
+
+def soma_impares(numeros):
+    total = 0
+    for num in numeros:
+        if num % 2 != 0:
+            total = total + num
+    return total
+
+lista = [1, 2, 3, 4, 5, 3, 7]
+print(soma_impares((lista)))
+
+tupla = 1, 2, 3, 4, 5, 3, 7
+print(soma_impares(tupla))
+
