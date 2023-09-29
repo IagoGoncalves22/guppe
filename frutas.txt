@@ -1,4 +1,8 @@
-goiaba
-abacate
-java
+manga
 uva
+jabuticaba
+melancia
+abacate
+jaca
+framboesa
+laranja
