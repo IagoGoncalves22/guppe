@@ -88,14 +88,11 @@ print(os.getcwd())
 
 print(os.listdir(''))
 
-
-....................
-
-....................
-
 """
 
+
 # Fazer o import
+
 import os
 
 # Podemos listar os arquivos e diretórios com mais detalhes com scandir()
@@ -121,3 +118,4 @@ print(arquivos[0].stat()) # Estatísticas...
 
 scanner.close()
 
+# OBS: alguma coisa dentro dos comentários não deixa executar o programa. Retirando os comentários executa normalmente.
