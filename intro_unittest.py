@@ -22,7 +22,34 @@ TestCase -> Casos de teste para sua unidade
 # Conhecendo as assertions
 
 Método                         checa que
-assert
+assertEqual(a,b)               a == b
+assertNotEqual(a, b)           a != b
+assertTrue(x)                  x é verdadeiro
+assertFalse(x)                 x é falso
+assertIs(a, b)                 a é b
+assertIsNot(a, b)              a não é b
+assertIfNone(x)                x é None
+assertIsNotNone(x)             x não é None
+assertIn(a, b)                 a está em b
+assertNotIn(a, b)              a não está em b
+assertIsInstance(a, b)         a é instância de b
+assertnotIsInstance(a, b)      a não é instância de b
+
+Por convenção, todos os testes em um teste case, devem ter o seu nome iniciado com underline _
+
+Para executar os testes com unittest
+
+python nome_do_modulo.py
+
+# Para executar os testes com unittest no modo verbose
+
+python nome_do_modulo -v
+
+# Docstrings nos testes
+
+Podemos acrescentar (e é recomendado) docstrings nos testes.
+
+
 
 """
 
