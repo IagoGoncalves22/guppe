@@ -1,3 +1,36 @@
+"""
+# Correto
+
+texto: str
+
+# Incorreto
+
+texto:str
+
+texto : str
+
+# Correto
+
+) -> str
+
+# Incorreto
+
+)->str
+
+) ->str
+
+# Correto
+
+alinhamento: bool = True
+
+# Incorreto
+
+alinhamento:bool=True
+
+
+"""
+
+
 def cabecalho(texto: str, alinhamento: bool = True) -> str:
     if alinhamento:
         return f"{texto.title()}\n{'-' * len(texto)}"
