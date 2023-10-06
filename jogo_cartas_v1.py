@@ -62,6 +62,19 @@ print(criar_baralho()) # criu uma lista de tuplas. Cada tupla são strings.
 
 def distribuir_cartas(baralho):
     """Gerencia a mão de cartas de acordo com o baralho gerado"""
+    return (baralho[0::4], baralho[1::4], baralho[2::4], baralho[3::4])
 
+def jogar():
+    """Inicia um jogo de cartas para 4 jogadores"""
+    cartas = criar_baralho(aleatorio=True)
+    jogadores = 'PI P2 P3 P4'.split()
+    maos = {j: m for j, m in zip(jogadores, distribuir_cartas(cartas))}
+
+    for jogador, cartas in maos.items():
+        carta = ' '.join(f"{j}{c}" for (j, c) in cartas)
+        print(f'{jogador}: {carta}')
+
+if __name__ == '__main__':
+    jogar()
 
 
